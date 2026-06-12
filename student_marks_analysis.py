@@ -1,25 +1,25 @@
 import numpy as np
-Student_marks = np.array([65,77,85,45,35,90,95,80,86,54,60,99])
-avg_marks = Student_marks.mean()
-print(np.round(avg_marks, 2))
-highest_marks = Student_marks.max()
-print(highest_marks)
-lowest_marks = Student_marks.min()
-print(lowest_marks)
-passed_students = Student_marks[Student_marks > 40]
-print(passed_students)
-print(passed_students.size)
-failed_students = Student_marks[Student_marks < 40]
-print(failed_students)
-print(failed_students.size)
-above_75 = Student_marks[Student_marks > 75]
-print(above_75)
-grace_marks = Student_marks + 5
-print(grace_marks)
-total_marks = Student_marks.sum()
-print(total_marks)
-btw_60_80 = Student_marks[(Student_marks > 60) & (Student_marks < 80)]
-print(btw_60_80)
-print(Student_marks.size)
-percent_pass = (passed_students.size/Student_marks.size) * 100
-print(np.round(percent_pass, 2),"%")
+student_marks = np.array([65,77,85,45,35,90,95,80,86,54,60,99])
+avg_marks = student_marks.mean()
+print("Mean Marks =", np.round(avg_marks, 2))
+highest_marks = student_marks.max()
+print("Maximum Marks =", highest_marks)
+lowest_marks = student_marks.min()
+print("Minimum Marks =", lowest_marks)
+passed_students = student_marks[student_marks > 40]
+print("Passing students marks =", passed_students)
+print("Number of passed students =", passed_students.size)
+failed_students = student_marks[student_marks < 40]
+print("Failed students marks =", failed_students)
+print("Number of failed students =", failed_students.size)
+above_75 = student_marks[student_marks > 75]
+print("Marks above 75 =", above_75)
+grace_marks = student_marks + 5
+print("Addition of 5 grace marks =",grace_marks)
+total_marks = student_marks.sum()
+print("Total marks =", total_marks)
+btw_60_80 = student_marks[(student_marks > 60) & (student_marks < 80)]
+print("Marks between 60 and 80 =", btw_60_80)
+print("Number of students =", student_marks.size)
+percent_pass = (passed_students.size/student_marks.size) * 100
+print("Pass Percentage =", np.round(percent_pass, 2),"%")
